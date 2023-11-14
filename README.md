@@ -1,2 +1,2 @@
 # My-index
-[main.jsp] (../My-index/blob/master/src/main/webapp/index.jsp)
+[main.jsp] (xzvfoi/My-index/blob/master/src/main/webapp/index.jsp)
