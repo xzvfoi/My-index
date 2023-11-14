@@ -1,7 +1,7 @@
 # My-index
 On the school create My index
 ## Index main
-<table><tr><td bgcolor=#DCDCDC>
+<table><tr><td bgcolor=#7f7f7f>
 [Main](https://github.com/xzvfoi/My-index/blob/master/src/main/webapp/index.jsp)<br/>
 [Student index](https://github.com/xzvfoi/My-index/blob/master/src/main/webapp/jsp/hello.jsp)<br/>
 [Teacher index](https://github.com/xzvfoi/My-index/blob/master/src/main/webapp/jsp/hellos.jsp)<br/>
