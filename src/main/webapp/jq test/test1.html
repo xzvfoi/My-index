@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        html, body{
+            height: 100%;  /*使得页面全屏展示*/
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ffffff;
+            overflow: hidden;  /*超出屏幕的部分隐藏*/
+            position: relative;
+        }
+
+        article{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 100px;
+            box-sizing: border-box;
+            -webkit-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+            top: 0;
+        }
+        #tablet{
+            background: #4ac4aa;
+            left: 0;
+        }
+        #wifi{
+            background: #ea5634;
+            left: 100%;
+        }
+
+        h1{
+            font-size: 4em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /*设置下边界线*/
+            padding-bottom: 30px;   /*设置下边界线的内边距*/
+        }
+        p{
+            color: rgba(255, 255, 255, 0.8); /*设置段落颜色和透明度*/
+            margin-bottom: 30px;  /*设置下边的外边距*/
+        }
+        a{
+            color:#ffffff;
+            font-size: 1.5em;
+            padding: 5px 50px;
+            border: 1px solid #ffffff;   /*设置边框 粗细、样式、颜色*/
+            border-radius: 4px;    /*设置边框圆角*/
+            text-decoration: none; /*设置文本无下线*/
+        }
+
+        #tablet.move{
+            left: -100%;
+        }
+        #wifi.move{
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<script type="text/javascript" src="jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('a').click(function(e){
+            e.preventDefault();
+            $('#tablet').toggleClass('move');
+            $('#wifi').toggleClass('move');
+        });
+    });
+</script>
+
+<article id="tablet">
+  <h1>Comprehensam</h1>
+  <p>Mel homero labores ce maluisset sententiae qui,...s dissentiunt ad, mel atqui oblique aliquam te.</p>
+  <a href="#wifi">Next</a>
+</article>
+<article id="wifi">
+  <h1>Adversarium</h1>
+  <p>Ea qui graece facilisi persequeris. Ne est quodsi atomorum, ... autem forensibus dissentiet nec ne. Copiosae similique ex qui.</p>
+  <a href="#tablet">Back</a>
+</article>
+
+</body>
+</html>

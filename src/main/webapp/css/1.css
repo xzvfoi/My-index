@@ -1,0 +1,13 @@
+a {color: #ffffff;font-size: 27px;}
+b {font-family: "Microsoft JhengHei", serif}
+body {background-color: #7f7f7f;margin:0 auto;text-align:center}
+
+.a
+{   text-align: center;
+    border-radius: 10px;
+    width: auto;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+}

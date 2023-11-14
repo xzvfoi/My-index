@@ -1,0 +1,90 @@
+* {box-sizing: border-box;}.header h1 {font-size: 50px;}
+ body   {font-family: Arial, sans-serif; padding: 10px; background: #f1f1f1;        }
+ body::-webkit-scrollbar {display: none;}  .header {padding: 30px; background: gray;}
+
+.topnav        {overflow: hidden; background-color: #333;height: unset;}
+.topnav a      {float: left;display: block;color: #f2f2f2;
+            text-align:center;padding:14px 16px;text-decoration: none; }
+.topnav a:hover            {background-color: #ddd; color: black;      }
+.topnav ul                 {width:500px;overflow:hidden;               }
+.topnav ul li              {width:100px;float:left;list-style:none;    }
+.topnav ul li ul           {display:none;                              }
+.topnav ul li:hover ul     {display:block;margin-left:0;padding-left:0;}
+.topnav ul li:hover a      {background-color:#adadad;                  }
+.topnav ul li:hover ul li  {list-style:none;float:none;                }
+.topnav ul li:hover ul li a{color: #FFFFFF;display:inline-block;
+                            height:30px;width:100px;background: #adadad;
+                            text-decoration:none;text-align:center;    }
+.topnav ul li:hover ul li:hover a
+                           {background-color: #797979;                 }
+
+.fakeimg   {background-color: #aaa;  padding: 20px;  width: 100%;      }
+.card      {background-color: white; padding: 25px; margin-top: 20px;  }
+#show1     {background-color: white; padding: 20px; margin-top: 20px;  }
+.footer    {text-align:center;padding:20px;margin-top:20px;background:#ddd;}
+.row:after {display: table; clear: both;}
+
+#student,#notice,#Use,#show2,#grades,#insert,#news
+           {background-color: white; padding: 20px;display:none; margin-top: 20px;}
+.tab1 tr   {height: auto;text-align: center;}    .tab1 {background-color: #eeeeee;}
+.tab1 td   {width: 100rem;border-right: 1px solid;                                }
+ button    {border:none; border-right:#8D8D8D 1px solid;                          }
+ input     {outline:none;width:auto;border:none;border-radius:0;text-align: center;
+                               border-right:#8D8D8D 1px solid;box-shadow: 0 0 0 0;}
+
+ textarea  {background-color:#eeeeee;border:0;border-radius:0;width:100%;
+            resize: none;outline: none;text-align: center;overflow-y:hidden;      }
+
+.textarea1 {font-size: 15px;height: 94px;width: 100px;}
+
+.textarea2 {font-size: 15px;height:50px;width: 100%; background-color: white;text-align: left   }
+.shadow_css {
+     display: none;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 120%;
+     background-color: black;
+     z-index: 10;
+     /* 为mozilla firefox 设置透明度  */
+     -moz-opacity: 0.6;
+     /* 设置透明度 */
+     opacity: .60;
+     /* 为IE 设置透明度  */
+     filter: alpha(opacity=66);
+ }
+
+.window_css {
+    background-color: #fdfdfd;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    width: 95%;
+    height: 80%;
+    z-index: 11;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.window_css1{
+    background-color: #fdfdfd;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 12%;
+    width: 70%;
+    height: 52%;
+    z-index: 11;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局
+改为上下布局 */
+@media screen and (max-width: 800px) {.leftcolumn,.rightcolumn {width: 100%; padding: 0;}}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px)  {.topnav a {float: none; width: 100%;}}
+
